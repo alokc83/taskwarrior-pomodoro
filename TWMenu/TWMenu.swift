@@ -43,6 +43,7 @@ public class TWMenu: NSObject, NSMenuDelegate, NSUserNotificationCenterDelegate 
             "/usr/local/bin/task",
             "/usr/bin/task",
             "/opt/local/bin/task",
+            "/opt/homebrew/bin/task",
             ]
         if let configuredPath = configuration!["pomodoro.taskwarrior_path"] {
             pathOptions = [configuredPath]
@@ -809,7 +810,7 @@ public class TWMenu: NSObject, NSMenuDelegate, NSUserNotificationCenterDelegate 
         // create a User Notification
         let notification = NSUserNotification.init()
         notification.title = "Break time!"
-        notification.informativeText = "You've completed your pomodoro."
+        notification.informativeText = "You've completed a pomodoro."
         notification.userInfo = ["taskId": taskId!]
         notification.soundName = NSUserNotificationDefaultSoundName
         if let soundName = configuration!["pomodoro.soundName"] {
