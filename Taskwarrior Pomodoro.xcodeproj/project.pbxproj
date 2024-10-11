@@ -265,10 +265,9 @@
 			};
 			buildConfigurationList = 4C879ADC1C13BDF8000C3F84 /* Build configuration list for PBXProject "Taskwarrior Pomodoro" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
