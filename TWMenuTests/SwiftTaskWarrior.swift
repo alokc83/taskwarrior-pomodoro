@@ -68,7 +68,7 @@ public class SwiftTaskWarrior {
         let queueStart = Date()
         myCustomQueue.sync {
             let task = Process()
-            task.launchPath = "/usr/local/bin/task"
+            task.launchPath = "/opt/homebrew/bin/task"
             task.arguments = arguments
             print("-> task \(task.arguments?.joined(separator: " ") ?? "")")
             print("----------------")

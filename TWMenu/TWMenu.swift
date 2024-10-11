@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SwiftyJSON
 
 public class TWMenu: NSObject, NSMenuDelegate, NSUserNotificationCenterDelegate {
     
